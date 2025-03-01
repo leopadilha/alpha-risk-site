@@ -1,0 +1,77 @@
+footer h2 {
+  margin-bottom: 1rem;
+}
+
+#sobre-nos.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stripes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stripe {
+  width: 50px;
+  height: 5px;
+  background-color: white;
+}
+
+.animated-image {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#localizacao-contato {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+#localizacao-contato h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+footer a {
+  transition: transform 0.3s ease;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+}
+
+footer .map-container {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+}

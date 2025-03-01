@@ -1,0 +1,70 @@
+
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 40px; /* Título maior */
+  }
+
+  header span {
+    font-size: 20px; /* Subtítulo maior */
+  }
+}
+
+
+@media (max-width: 1199px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header span {
+    font-size: 9px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  header span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 16px;
+  }
+
+  header span {
+    font-size: 9px; /
+  }
+
+  .navbar-brand img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 360px) {
+  header h1 {
+    font-size: 14px;
+  }
+
+  header span {
+    font-size: 6px;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid navy;
+}
+
+.navbar-nav .nav-link {
+  padding-bottom: 5px;
+}
