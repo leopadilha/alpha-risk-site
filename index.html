@@ -47,6 +47,10 @@
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/geral.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- <link rel="canonical" href="https://gpdefender.com.br/" /> -->
     <link
       rel="stylesheet"
@@ -343,168 +347,190 @@
       </div>
     </main>
 
+    <!-- Seção de Serviços -->
     <section id="servicos" class="py-5" style="background: #0e2f64">
       <div class="container">
-        <h2 class="text-center mb-4 text-white">Serviços</h2>
-        <div
-          id="servicosCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
+        <h2
+          class="text-center mb-4 text-white"
+          style="border-bottom: #fff solid 3px"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="text-center text-white">
-                    <img
-                      src="images/escolta.webp"
-                      class="img-fluid"
-                      alt="Escolta"
-                      style="max-height: 300px; object-fit: cover; width: 100%"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-center mt-3"
-                    >
-                      <h5 class="mb-0 me-3">Escolta</h5>
-                      <img
-                        src="images/logo-alpha.webp"
-                        alt="Logo da Empresa"
-                        style="height: 40px"
-                      />
-                    </div>
-                  </div>
+          Serviços
+        </h2>
+
+        <!-- Bloco de Ícones e Textos Resumidos responsivo -->
+        <div class="row text-center mb-4">
+          <div class="col-6 col-md-2 mb-2">
+            <i class="fas fa-bolt text-white fa-2x"></i>
+            <p class="text-white small mb-0">Pronta Resposta</p>
+          </div>
+          <div class="col-6 col-md-2 mb-2">
+            <i class="fas fa-user-check text-white fa-2x"></i>
+            <p class="text-white small mb-0">Perícia</p>
+          </div>
+          <div class="col-6 col-md-2 mb-2">
+            <i class="fas fa-headset text-white fa-2x"></i>
+            <p class="text-white small mb-0">Suporte Personalizado</p>
+          </div>
+          <div class="col-6 col-md-2 mb-2">
+            <i class="fas fa-clock text-white fa-2x"></i>
+            <p class="text-white small mb-0">Atendimento 24h</p>
+          </div>
+          <div class="col-6 col-md-2 mb-2">
+            <i class="fas fa-shield-alt text-white fa-2x"></i>
+            <p class="text-white small mb-0">Preservação de Cargas</p>
+          </div>
+        </div>
+
+        <!-- Swiper Carousel dos Serviços -->
+        <!-- Certifique-se de incluir o CSS e JS do Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Serviço 1: Escolta -->
+            <div class="swiper-slide">
+              <div class="text-center text-white">
+                <img
+                  src="images/escolta.webp"
+                  alt="Escolta"
+                  class="img-fluid"
+                  style="max-height: 300px; object-fit: cover; width: 100%"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-center mt-3"
+                >
+                  <h5 class="mb-0 me-3">Escolta</h5>
+                  <img
+                    src="images/logo-alpha.webp"
+                    alt="Logo da Empresa"
+                    style="height: 40px"
+                  />
                 </div>
-                <!-- Serviço 2: Segurança Armada -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="text-center text-white">
-                    <img
-                      src="images/escolta-armada.webp"
-                      class="img-fluid"
-                      alt="Segurança Armada"
-                      style="max-height: 300px; object-fit: cover; width: 100%"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-center mt-3"
-                    >
-                      <h5 class="mb-0 me-3">Segurança Armada</h5>
-                      <img
-                        src="images/logo-alpha.webp"
-                        alt="Logo da Empresa"
-                        style="height: 40px"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <!-- Serviço 3: Preservação de Cargas -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="text-center text-white">
-                    <img
-                      src="images/tombamento-carga.webp"
-                      class="img-fluid"
-                      alt="Preservação de Cargas"
-                      style="max-height: 300px; object-fit: cover; width: 100%"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-center mt-3"
-                    >
-                      <h5 class="mb-0 me-3">Preservação de Cargas</h5>
-                      <img
-                        src="images/logo-alpha.webp"
-                        alt="Logo da Empresa"
-                        style="height: 40px"
-                      />
-                    </div>
-                  </div>
-                </div>
+                <p class="small mt-2">
+                  Proteção especializada para o transporte seguro de cargas.
+                </p>
               </div>
             </div>
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="text-center text-white">
-                    <img
-                      src="images/pronta-resposta.webp"
-                      class="img-fluid"
-                      alt="Pronta Resposta"
-                      style="max-height: 300px; object-fit: cover; width: 100%"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-center mt-3"
-                    >
-                      <h5 class="mb-0 me-3">Pronta Resposta</h5>
-                      <img
-                        src="images/logo-alpha.webp"
-                        alt="Logo da Empresa"
-                        style="height: 40px"
-                      />
-                    </div>
-                  </div>
+            <!-- Serviço 2: Segurança Armada -->
+            <div class="swiper-slide">
+              <div class="text-center text-white">
+                <img
+                  src="images/escolta-armada.webp"
+                  alt="Segurança Armada"
+                  class="img-fluid"
+                  style="max-height: 300px; object-fit: cover; width: 100%"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-center mt-3"
+                >
+                  <h5 class="mb-0 me-3">Segurança Armada</h5>
+                  <img
+                    src="images/logo-alpha.webp"
+                    alt="Logo da Empresa"
+                    style="height: 40px"
+                  />
                 </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="text-center text-white">
-                    <img
-                      src="images/tombamento-carga.webp"
-                      class="img-fluid"
-                      alt="Cobertura Nacional"
-                      style="max-height: 300px; object-fit: cover; width: 100%"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-center mt-3"
-                    >
-                      <h5 class="mb-0 me-3">Cobertura Nacional</h5>
-                      <img
-                        src="images/logo-alpha.webp"
-                        alt="Logo da Empresa"
-                        style="height: 40px"
-                      />
-                    </div>
-                  </div>
+                <p class="small mt-2">
+                  Equipe armada para máxima proteção em qualquer situação.
+                </p>
+              </div>
+            </div>
+            <!-- Serviço 3: Preservação de Cargas -->
+            <div class="swiper-slide">
+              <div class="text-center text-white">
+                <img
+                  src="images/tombamento-carga.webp"
+                  alt="Preservação de Cargas"
+                  class="img-fluid"
+                  style="max-height: 300px; object-fit: cover; width: 100%"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-center mt-3"
+                >
+                  <h5 class="mb-0 me-3">Preservação de Cargas</h5>
+                  <img
+                    src="images/logo-alpha.webp"
+                    alt="Logo da Empresa"
+                    style="height: 40px"
+                  />
                 </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="text-center text-white">
-                    <img
-                      src="images/sinistro.webp"
-                      class="img-fluid"
-                      alt="Tombamento de Cargas"
-                      style="max-height: 300px; object-fit: cover; width: 100%"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-center mt-3"
-                    >
-                      <h5 class="mb-0 me-3">Tombamento de Cargas</h5>
-                      <img
-                        src="images/logo-alpha.webp"
-                        alt="Logo da Empresa"
-                        style="height: 40px"
-                      />
-                    </div>
-                  </div>
+                <p class="small mt-2">
+                  Soluções completas para manter a integridade das suas cargas.
+                </p>
+              </div>
+            </div>
+            <!-- Serviço 4: Pronta Resposta -->
+            <div class="swiper-slide">
+              <div class="text-center text-white">
+                <img
+                  src="images/pronta-resposta.webp"
+                  alt="Pronta Resposta"
+                  class="img-fluid"
+                  style="max-height: 300px; object-fit: cover; width: 100%"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-center mt-3"
+                >
+                  <h5 class="mb-0 me-3">Pronta Resposta</h5>
+                  <img
+                    src="images/logo-alpha.webp"
+                    alt="Logo da Empresa"
+                    style="height: 40px"
+                  />
                 </div>
+                <p class="small mt-2">
+                  Atendimento imediato para emergências no transporte.
+                </p>
+              </div>
+            </div>
+            <!-- Serviço 5: Cobertura Nacional -->
+            <div class="swiper-slide">
+              <div class="text-center text-white">
+                <img
+                  src="images/tombamento-carga.webp"
+                  alt="Cobertura Nacional"
+                  class="img-fluid"
+                  style="max-height: 300px; object-fit: cover; width: 100%"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-center mt-3"
+                >
+                  <h5 class="mb-0 me-3">Cobertura Nacional</h5>
+                  <img
+                    src="images/logo-alpha.webp"
+                    alt="Logo da Empresa"
+                    style="height: 40px"
+                  />
+                </div>
+                <p class="small mt-2">
+                  Serviços disponíveis em todo o território brasileiro.
+                </p>
+              </div>
+            </div>
+            <!-- Serviço 6: Tombamento de Cargas -->
+            <div class="swiper-slide">
+              <div class="text-center text-white">
+                <img
+                  src="images/sinistro.webp"
+                  alt="Tombamento de Cargas"
+                  class="img-fluid"
+                  style="max-height: 300px; object-fit: cover; width: 100%"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-center mt-3"
+                >
+                  <h5 class="mb-0 me-3">Tombamento de Cargas</h5>
+                  <img
+                    src="images/logo-alpha.webp"
+                    alt="Logo da Empresa"
+                    style="height: 40px"
+                  />
+                </div>
+                <p class="small mt-2">
+                  Assistência especializada para imprevistos no transporte.
+                </p>
               </div>
             </div>
           </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#servicosCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#servicosCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-          </button>
+          <!-- Se desejar, você pode incluir botões de navegação do Swiper -->
         </div>
       </div>
     </section>
@@ -575,6 +601,18 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        loop: true,
+        autoplay: { delay: 3000 },
+        breakpoints: {
+          0: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 20 },
+          992: { slidesPerView: 3, spaceBetween: 30 },
+        },
+      });
+    </script>
     <script>
       window.addEventListener("load", () => {
         const section = document.querySelector("#sobre-nos");
