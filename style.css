@@ -7,6 +7,10 @@ header {
   color: white;
 }
 
+.nav-link.active {
+  border-bottom: 2px solid #000080;
+}
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -14,4 +18,29 @@ header {
   font-display: swap;
   src: url("https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf")
     format("truetype");
+}
+
+/* Garanta que o container do Swiper seja posicionado relativamente */
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* Estilização dos botões de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+.swiper-button-prev {
+  left: 10px;
+}
+.swiper-button-next {
+  right: 10px;
 }
