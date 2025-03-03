@@ -3,4 +3,4 @@ Disallow: /admin
 Disallow: /private
 Allow: /
 
-Sitemap: https://gpdefender.com.br/sitemap.xml
+Sitemap: https://grupoalpharisk.com.br/sitemap.xml
