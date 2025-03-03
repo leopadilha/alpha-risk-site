@@ -44,3 +44,31 @@ header {
 .swiper-button-next {
   right: 10px;
 }
+
+#home {
+  position: relative;
+  overflow: hidden;
+  height: 30vh;
+}
+
+#home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Tablet: 50vh */
+@media (min-width: 768px) {
+  #home {
+    height: 55vh;
+  }
+}
+
+/* Notebook e telas maiores: 70vh */
+@media (min-width: 1024px) {
+  #home {
+    height: 80vh;
+  }
+}
